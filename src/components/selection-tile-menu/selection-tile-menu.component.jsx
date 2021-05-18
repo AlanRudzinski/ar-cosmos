@@ -8,6 +8,7 @@ import styled from 'styled-components';
 import SelectionTile from '../selection-tile/selection-tile.component'
 
 const Menu = styled.div`
+    position: relative;
     display: inline-grid;
     max-width: 400px;
     grid-template-columns: auto auto;

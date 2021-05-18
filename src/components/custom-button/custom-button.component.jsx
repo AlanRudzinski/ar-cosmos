@@ -11,6 +11,10 @@ const StyledButton = styled.button`
     font-size: 16px;
     padding: 12px 32px;
     background-color: #7860D7;
+    cursor: pointer;
+    &:hover {
+        background-color: #05C9B7;
+    }
 `;
 
 const CustomButton = ({ className }) => (
