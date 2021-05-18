@@ -6,8 +6,17 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    height: 100vh;
+    width: 100vw;
     background: #221B3A;
     font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: white;
+  }
+
+  #root {
+      width: 100%;
+      height: 100%;
   }
 `;
  
