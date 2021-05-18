@@ -12,8 +12,8 @@ const Menu = styled.div`
     max-width: 400px;
     grid-template-columns: auto auto;
     column-gap: 30px;
-    row-gap: 32px;
-    margin: 60px 0 0 110px
+    row-gap: 13px;
+    margin-right: 220px;
 
 `
 
