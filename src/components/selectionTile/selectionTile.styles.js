@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
-
 import styled from 'styled-components';
 
-const TileContainer = styled.div`
+export const StyledTileContainer = styled.div`
     border: 1px #342957 solid
     border-radius: 16px;
     width: 160px;
@@ -11,7 +9,7 @@ const TileContainer = styled.div`
     cursor: pointer;
 `
 
-const TileTitle = styled.span`
+export const StyledTileTitle = styled.span`
     margin: 0;
     width: 100%;
     font-weight: 600;
@@ -21,7 +19,7 @@ const TileTitle = styled.span`
     bottom: 24px;
 `
 
-const TileImage = styled.div`
+export const StyledTileImage = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 16px;
@@ -35,14 +33,3 @@ const TileImage = styled.div`
     }
 `
 
-
-const SelectionTile = ({ title, imgUrl }) => {
-
-    return (
-    <TileContainer> 
-        <TileImage imgUrl={imgUrl}/>
-        <TileTitle>{title}</TileTitle>
-    </TileContainer>
-)
-}
-export default SelectionTile;

@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     color: white;
+    overflow: hidden;
   }
 
   #root {

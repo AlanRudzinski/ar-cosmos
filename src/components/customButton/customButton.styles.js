@@ -1,8 +1,6 @@
-import React from 'react';
-
 import styled from 'styled-components';
 
-const StyledButton = styled.button`
+export const StyledButton = styled.button`
     width: 184px;
     height: 48px;
     border-radius: 8px;
@@ -17,10 +15,3 @@ const StyledButton = styled.button`
     }
 `;
 
-const CustomButton = ({ className }) => (
-    <StyledButton className={className}>
-        Launch Rocket!
-    </StyledButton>
-);      
-
-export default CustomButton;

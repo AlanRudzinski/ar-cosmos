@@ -1,16 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
+
+import { StyledLogoContainer } from './logo.styles';
 
 import { ReactComponent as Usertive} from '../../assets/usertive.svg'
 
-const LogoContainer = styled.div`
-    padding: 36px 15px;
-`
 
 const Logo = () => (
-    <LogoContainer>
+    <StyledLogoContainer>
         <Usertive />
-    </LogoContainer>
+    </StyledLogoContainer>
 );      
 
 export default Logo;
