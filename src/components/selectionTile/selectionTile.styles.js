@@ -25,7 +25,7 @@ export const StyledTileImage = styled.div`
     border-radius: 16px;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(360deg, #2B224A 0%, rgba(43, 34, 74, 0) 100%), url(${props => props.imgUrl}) ;
+    background-image: linear-gradient(360deg, ${props => props.theme.colors.modalBg} 0%, rgba(43, 34, 74, 0) 100%), url(${props => props.imgUrl}) ;
     &:hover {
         background: linear-gradient(rgba(43, 34, 74, 0.92) 7.69%, rgba(70, 58, 113, 0.92) 100%), url(${props => props.imgUrl}) ;
         background-position: center;

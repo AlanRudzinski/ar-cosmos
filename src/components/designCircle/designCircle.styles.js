@@ -6,7 +6,7 @@ export const StyledDesignCircle = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, #2B2347 0%, #221B3A 100%);
+    background: linear-gradient(180deg, ${props => props.theme.colors.lightBg} 0%, ${props => props.theme.colors.mainBg} 100%);
     position: absolute;
     border-radius: 50%;
     top: ${props => props.top}px;
@@ -15,6 +15,6 @@ export const StyledDesignCircle = styled.div`
 export const StyledInnerCircle = styled.div`
     width: 246.5px;
     height: 246.5px;
-    background: #221B3A;
+    background: ${props => props.theme.colors.mainBg};
     border-radius: 50%;
 `;

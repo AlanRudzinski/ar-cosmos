@@ -6,7 +6,7 @@ import { ReactComponent as Cross } from '../../assets/cross.svg';
 export const StyledBox = styled.div`
     height: 360px;
     width: 540px;
-    background-color: #2B224A;
+    background-color: ${props => props.theme.colors.modalBg};
     position: fixed;
     z-index: 1;
     top: calc(50% - 195px);
@@ -30,6 +30,7 @@ export const StyledFlexRow = styled.div`
 
 export const StyledCross = styled(Cross)`
     padding: 0 5px 0 0;
+    cursor: pointer;
 `;
 
 export const StyledHeader = styled.header`

@@ -8,10 +8,10 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     height: 100vh;
     width: 100vw;
-    background: #221B3A;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    color: white;
+    background: ${props => props.theme.colors.mainBg};
+    font-family: ${props => props.theme.fonts[0]};
+    font-size: ${props => props.theme.fontSizes.medium};
+    color: ${props => props.theme.colors.mainFont};
     overflow: hidden;
   }
 

@@ -1,36 +1,38 @@
+import { theme } from '../../MainTheme';
+
 export const LAYOUT_DATA = [
 {
     type: 'dot',
     top: 144,
-    color: '#E34A67',
+    color: theme.colors.lightRed,
     left: 81,
     right: 0
 },
 {
     type: 'dot',
     top: 652,
-    color: '#7860D7',
+    color: theme.colors.lightViolet,
     left: 660,
     right: 0
 },    
 {
     type: 'dot',
     top: 552,
-    color: '#E34A67',
+    color: theme.colors.lightRed,
     left: 1259,
     right: 0
 },
 {
     type: 'dot',
     top: 84,
-    color: '#00C9B7',
+    color: theme.colors.teal,
     left: 875,
     right: 0
 },
 {
     type: 'dot',
     top: 500,
-    color: '#00C9B7',
+    color: theme.colors.teal,
     left: 297,
     right: 0
 },
