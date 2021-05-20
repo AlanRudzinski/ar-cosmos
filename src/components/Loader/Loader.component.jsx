@@ -1,13 +1,13 @@
 import React from 'react';
 
 import loader from '../../assets/loader.gif' 
-import { StyledImage } from './Loader.styles';
+import { StyledImage, StyledLoaderWrapper } from './Loader.styles';
 
 const Loader = () => (
-    <React.Fragment>
+    <StyledLoaderWrapper>
         <StyledImage src={loader} />
         <span>...Loading</span>
-    </React.Fragment>
+    </StyledLoaderWrapper>
 )
 
 export default Loader;

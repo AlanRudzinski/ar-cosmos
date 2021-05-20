@@ -7,8 +7,8 @@ export const theme = {
     lightViolet: '#7860D7',
     lightRed: '#E34A67',
     teal: '#00C9B7',
-    sortButton: '#251D42',
-    selectionButton: '#342A56',
+    hoverSortButton: '#251D42',
+    sortButton: '#342A56',
 
     greenActive: '#05C9B7',
   },

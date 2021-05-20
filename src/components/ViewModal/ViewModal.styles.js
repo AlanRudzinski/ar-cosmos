@@ -5,11 +5,12 @@ import { ReactComponent as Cross } from '../../assets/cross.svg';
 export const StyledContentWrapper = styled.div`
     width: 90%;
     margin: 5px auto 0;
-    border: red solid 1px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    height: 270px;
+    position: relative;
+
 `;
 
 export const StyledBox = styled.div`
@@ -42,6 +43,21 @@ export const StyledCross = styled(Cross)`
 `;
 
 export const StyledHeader = styled.header`
+    margin: 0;
     height: 40px;
     width: 100%;
 `;
+
+export const StyledTableWrapper = styled.div`
+    width: 100%;
+    overflow-y: scroll;
+`;
+
+export const StyledTableOverlay = styled.div`
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(43, 34, 74, 0) 0%, ${props => props.theme.colors.modalBg} 100%);
+
+`
