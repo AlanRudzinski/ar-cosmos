@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  @import url(‘https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
   body {
     margin: 0;
     padding: 0;
@@ -13,7 +11,24 @@ const GlobalStyle = createGlobalStyle`
     font-size: ${props => props.theme.fontSizes.medium};
     color: ${props => props.theme.colors.mainFont};
     overflow: hidden;
+    box-sizing: border-box;
   }
+  button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+    color: inherit;
+    font: inherit;
+
+    line-height: normal;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+}
 
   #root {
       width: 100%;

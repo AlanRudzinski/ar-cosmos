@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { StyledCustomButton, StyledLandingGear, StyledRocket, StyledPlanetWrapper, 
-    StyledSmokeLeft, StyledSmokeRight } from './rocketLauncher.styles'
+    StyledSmokeLeft, StyledSmokeRight } from './RocketLauncher.styles'
 import { ReactComponent as Planet } from '../../assets/planet.svg';
 
 

@@ -3,7 +3,7 @@ import { ReactComponent as SmokeLeft } from '../../assets/smoke_left.svg';
 import { ReactComponent as SmokeRight } from '../../assets/smoke_right.svg';
 import { ReactComponent as Rocket} from '../../assets/rocket.svg';
 
-import CustomButton from '../customButton/customButton.component';
+import CustomButton from '../CustomButton/CustomButton.component';
 
 import styled from 'styled-components';
 

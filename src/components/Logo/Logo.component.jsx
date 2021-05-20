@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { StyledLogoContainer } from './logo.styles';
+import { StyledLogoContainer } from './Logo.styles';
 
 import { ReactComponent as Usertive} from '../../assets/usertive.svg'
 

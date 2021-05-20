@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { StyledButton } from './customButton.styles';
+import { StyledButton } from './CustomButton.styles';
 
 const CustomButton = ({ className }) => (
     <StyledButton className={className}>
