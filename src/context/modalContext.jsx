@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from 'react';
 
-import DetailsModal from '../components/DetailsModal/DetailsModal.component';
+import ModalLogic from '../components/ModalLogic/ModalLogic.component';
 
 
 const ModalContext = createContext(null);
@@ -17,7 +17,7 @@ const ModalProvider = ({ children }) => {
     return(
         <Provider value={{ openModal, setCategory }}>
             {children}
-            <DetailsModal triggerClose={closeModal} open={open} category={category}/>
+            <ModalLogic triggerClose={closeModal} open={open} category={category}/>
         </Provider>
     )
 } 

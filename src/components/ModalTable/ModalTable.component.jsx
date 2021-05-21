@@ -1,30 +1,25 @@
 import React from 'react';
-import { dataNameKey } from '../../utils/dataNameKey'
-
-import { StyledCell, StyledRow, StyledTable } from './ModalTable.styles';
-
-
+import dataParser from '../../utils/dataParser'
+import { StyledCell, StyledRow, StyledTable, StyledTableBody } from './ModalTable.styles';
 
 const ModalTable = ({ data, title }) => {
     if(!data) return ''
-    const objectData = data.map(element => { 
-        return ({
-            name: element[dataNameKey[title].name], status: element[dataNameKey[title].status]
-        })
-    })
+    const objectData = dataParser(data, title)
     return (
         <React.Fragment>
             <StyledTable>
-                <tbody>
-                    {
-                        objectData.map((element, idx) => (
-                            <StyledRow key={idx}>
-                                <StyledCell>{element.name}</StyledCell>
-                                <StyledCell>{String(element.status)}</StyledCell>
-                            </StyledRow>
-                        ))
-                    }
-                </tbody>
+                    <StyledTableBody>
+                        {
+                            objectData.map(element => {
+                                const { id, name, status } = element;
+                                return (
+                                <StyledRow key={id}>
+                                    <StyledCell>{name}</StyledCell>
+                                    <StyledCell>{String(status)}</StyledCell>
+                                </StyledRow>
+                            )})
+                        }
+                    </StyledTableBody>
             </StyledTable>
 
         </React.Fragment>

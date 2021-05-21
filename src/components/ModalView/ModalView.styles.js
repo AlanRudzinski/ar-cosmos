@@ -2,9 +2,13 @@ import styled from 'styled-components';
 
 import { ReactComponent as Cross } from '../../assets/cross.svg';
 
+import SimpleBar from 'simplebar-react';
+import 'simplebar/dist/simplebar.min.css';
+
 export const StyledContentWrapper = styled.div`
-    width: 90%;
+    width: 92%;
     margin: 5px auto 0;
+    padding: 0 2%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -19,8 +23,9 @@ export const StyledBox = styled.div`
     background-color: ${props => props.theme.colors.modalBg};
     position: fixed;
     z-index: 1;
-    top: calc(50% - 195px);
-    left: calc(50% - 250px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-46%, -54%);
     border-radius: 16px;
 `;
 
@@ -50,7 +55,6 @@ export const StyledHeader = styled.header`
 
 export const StyledTableWrapper = styled.div`
     width: 100%;
-    overflow-y: scroll;
 `;
 
 export const StyledTableOverlay = styled.div`
@@ -60,4 +64,19 @@ export const StyledTableOverlay = styled.div`
     bottom: 0;
     background: linear-gradient(180deg, rgba(43, 34, 74, 0) 0%, ${props => props.theme.colors.modalBg} 100%);
 
+`
+
+export const StyledSimpleBar = styled(SimpleBar)`
+    max-height: 230px;
+    & .simplebar-scrollbar:before {
+        background-color: ${props => props.theme.colors.scrollBar};
+        left: 0;
+        width: 4px;
+    }
+
+    & .simplebar-track {
+        margin: 15px 5px 0 0 ;
+        width: 4px;
+        background-color: ${props => props.theme.colors.scrollBarBg};
+    }
 `

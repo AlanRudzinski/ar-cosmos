@@ -12,3 +12,6 @@ export const StyledCell = styled.td`
     width: 50%;
     padding: 14.5px 10px;
 `
+
+export const StyledTableBody = styled.tbody`
+`

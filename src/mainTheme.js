@@ -9,6 +9,8 @@ export const theme = {
     teal: '#00C9B7',
     hoverSortButton: '#251D42',
     sortButton: '#342A56',
+    scrollBar: '#53477D',
+    scrollBarBg: '#221A3C',
 
     greenActive: '#05C9B7',
   },
