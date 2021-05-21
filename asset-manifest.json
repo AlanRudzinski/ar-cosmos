@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/ar-cosmos/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/ar-cosmos/static/js/main.7972060f.chunk.js",
+    "main.js.map": "/ar-cosmos/static/js/main.7972060f.chunk.js.map",
+    "runtime-main.js": "/ar-cosmos/static/js/runtime-main.b9b472a4.js",
+    "runtime-main.js.map": "/ar-cosmos/static/js/runtime-main.b9b472a4.js.map",
+    "static/js/2.b9734359.chunk.js": "/ar-cosmos/static/js/2.b9734359.chunk.js",
+    "static/js/2.b9734359.chunk.js.map": "/ar-cosmos/static/js/2.b9734359.chunk.js.map",
+    "index.html": "/ar-cosmos/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/ar-cosmos/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.b9734359.chunk.js.LICENSE.txt": "/ar-cosmos/static/js/2.b9734359.chunk.js.LICENSE.txt",
+    "static/media/capsule-big.c3ed6e78.png": "/ar-cosmos/static/media/capsule-big.c3ed6e78.png",
+    "static/media/crew.a06c45b2.png": "/ar-cosmos/static/media/crew.a06c45b2.png",
+    "static/media/cross.1e4b9463.svg": "/ar-cosmos/static/media/cross.1e4b9463.svg",
+    "static/media/landing_gear.661ada1a.svg": "/ar-cosmos/static/media/landing_gear.661ada1a.svg",
+    "static/media/loader.595ae4cb.gif": "/ar-cosmos/static/media/loader.595ae4cb.gif",
+    "static/media/planet.0551ac4a.svg": "/ar-cosmos/static/media/planet.0551ac4a.svg",
+    "static/media/rocket.714cbe96.svg": "/ar-cosmos/static/media/rocket.714cbe96.svg",
+    "static/media/rockets.51e1f8a8.png": "/ar-cosmos/static/media/rockets.51e1f8a8.png",
+    "static/media/smoke_left.bea86969.svg": "/ar-cosmos/static/media/smoke_left.bea86969.svg",
+    "static/media/smoke_right.1c080db4.svg": "/ar-cosmos/static/media/smoke_right.1c080db4.svg",
+    "static/media/starlink.302e15a4.png": "/ar-cosmos/static/media/starlink.302e15a4.png",
+    "static/media/usertive.d135bb48.svg": "/ar-cosmos/static/media/usertive.d135bb48.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b9b472a4.js",
+    "static/js/2.b9734359.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.7972060f.chunk.js"
+  ]
+}
