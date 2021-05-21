@@ -8,18 +8,19 @@ import RocketLauncher from '../RocketLauncher/RocketLauncher.component'
 import DetailsModal from '../DetailsModal/DetailsModal.component';
 import BackgroundElements from '../BackgroundElements/BackgroundElements.component';
 
+
 const Mainpage = () => (
-    <div>
-    <BackgroundElements />
-    <StyledContainer>
-        <Logo />
-        <StyledWrapper>
-            <SelectionTileMenu />
-            <RocketLauncher />
-            <DetailsModal/>
-        </StyledWrapper>
-    </StyledContainer>
-    </div>
+    <React.Fragment>
+        <BackgroundElements />
+        <StyledContainer>
+            <Logo />
+            <StyledWrapper>
+                <SelectionTileMenu />
+                <RocketLauncher />
+                <DetailsModal/>
+            </StyledWrapper>
+        </StyledContainer>
+    </React.Fragment>
 
 );      
 

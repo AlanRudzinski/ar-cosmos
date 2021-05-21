@@ -4,9 +4,15 @@ import { StyledCustomButton, StyledLandingGear, StyledRocket, StyledPlanetWrappe
     StyledSmokeLeft, StyledSmokeRight } from './RocketLauncher.styles'
 import { ReactComponent as Planet } from '../../assets/planet.svg';
 
+import { useRocketContext } from '../../context/rocketContext'
 
 
-const RocketLauncher = () => (
+
+
+const RocketLauncher = () => {
+    const { animating } = useRocketContext();
+    console.log(animating) 
+    return (
     <div>
         <StyledPlanetWrapper>
             <Planet/>
@@ -18,6 +24,6 @@ const RocketLauncher = () => (
         <StyledCustomButton />
     </div>
 
-    )
+    )}
 
 export default RocketLauncher;

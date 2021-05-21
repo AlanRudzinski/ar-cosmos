@@ -10,6 +10,7 @@ export const StyledButton = styled.button`
     padding: 12px 32px;
     background-color: ${props => props.theme.colors.lightViolet};
     cursor: pointer;
+    transition: all 0.5s ease 0s; 
     &:hover {
         background-color: ${props => props.theme.colors.greenActive};
     }

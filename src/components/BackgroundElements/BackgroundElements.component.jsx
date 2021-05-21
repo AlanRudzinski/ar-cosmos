@@ -5,16 +5,18 @@ import DesignDot from '../DesignDot/DesignDot.component';
 import { LAYOUT_DATA } from './layout.data';
 
 const BackgroundElements = () => (
-    <div>
+    <React.Fragment>
         {
-            LAYOUT_DATA.map(el => (
+            LAYOUT_DATA.map(el => {
+                const { id, left, right, top, color } = el;
+                return (
                 el.type === "dot" 
                 ? 
-                <DesignDot key={el.id} left={el.left} top={el.top} color={el.color} right={el.right}/> 
+                <DesignDot key={id} left={left} top={top} color={color} right={right}/> 
                 :
-                <DesignCircle key={el.id} left={el.left} top={el.top} right={el.right} />
-            ))
+                <DesignCircle key={id} left={left} top={top} right={right} />
+                )})
         }
-    </div>
+    </React.Fragment>
 );      
 export default BackgroundElements;
