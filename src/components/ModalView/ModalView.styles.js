@@ -51,6 +51,7 @@ export const StyledHeader = styled.header`
     margin: 0;
     height: 40px;
     width: 100%;
+    display: flex;
 `;
 
 export const StyledTableWrapper = styled.div`
