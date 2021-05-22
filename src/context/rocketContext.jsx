@@ -5,11 +5,12 @@ const RocketContext = createContext(null);
 const { Provider } = RocketContext;
 
 const RocketProvider = ({ children }) => {
+    const [animate, setAnimate] = useState(false);
     const [animating, setAnimating] = useState(false);
 
-    const  toggleAnimation = () => setAnimating(!animating)
+    const  toggleAnimation = () => setAnimate(!animate)
     return(
-        <Provider value={{ toggleAnimation, animating }}>
+        <Provider value={{ toggleAnimation, animate, animating, setAnimating }}>
             {children}
         </Provider>
     )

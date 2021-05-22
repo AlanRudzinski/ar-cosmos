@@ -6,32 +6,24 @@ import { ReactComponent as ArrowUp } from '../../assets/arrow_up.svg';
 import { ReactComponent as ArrowDown } from '../../assets/arrow_down.svg';
 
 
-const SortingButton = ({ text }) => {
-    const [isHovered, setIsHovered] = useState(null);
-    const [sortingAsc, setSortingAsc] = useState(false);
-    const [sortingDesc, setSortingDesc] = useState(false);
 
-    function manageSorting() {
-        if(!sortingDesc && !sortingAsc) setSortingAsc(true)
-        if(sortingAsc) {
-            setSortingAsc(false);
-            setSortingDesc(true);
-        } else {
-            setSortingDesc(false)
-        }
-    }
+
+const SortingButton = ({ text, handleSorting, type, sorting}) => {
+    const [isHovered, setIsHovered] = useState(null);
+    const { collection: sortingType, direction: sortingDirection } = sorting;
+
     return (
     <StyledButton
     isHovered={isHovered}
-    sortingAsc={sortingAsc}
-    sortingDesc={sortingDesc}
-    onClick={manageSorting}
+    isSorted={sortingType === type}
+    onClick={() => handleSorting(type)}
     onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
         {text}
-        {isHovered && (!sortingDesc && !sortingAsc) ? <BothArrows /> : ''}
-        {sortingDesc ? <ArrowDown /> : ''}
-        {sortingAsc ? <ArrowUp /> : ''}
+        {isHovered && !sortingDirection? <BothArrows /> : ''}
+        {sortingType === type && sortingDirection === 1 ? <ArrowDown /> : ''}
+        {sortingType === type && sortingDirection === -1 ? <ArrowUp /> : ''}
     </StyledButton>
 )};      
+
 
 export default SortingButton;

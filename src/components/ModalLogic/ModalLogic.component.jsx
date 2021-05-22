@@ -17,7 +17,9 @@ const ModalLogic = ({ open, category, triggerClose }) => {
 
     useEffect(() => {
         if(category) getData();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [category])
+
 
     if(!open) return null;
 

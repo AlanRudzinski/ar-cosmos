@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StyledBox, StyledTableOverlay, StyledTableWrapper, StyledCross,
      StyledFlexRow, StyledHeader, StyledTitle, StyledContentWrapper, StyledSimpleBar} from './ModalView.styles';
 import SortingButton from '../SortingButton/SortingButton.component';
@@ -9,7 +9,14 @@ import { capitalizeFirstLetter } from '../../utils/capitalizeFirstLetter';
 
 
 const ModalView = ({ title, data, loading, error, triggerClose }) => {
-    const { name, status } = keyResolver(title)
+    const { name, status } = keyResolver(title);
+    const [sorting, setSorting] = useState({ collection: null, direction: null});
+
+    const handleSorting = (type) => {
+        setSorting({ 
+            collection: sorting.direction === -1 ? null : type, 
+            direction: sorting.direction === null ? 1 : sorting.direction === 1 ? -1 : null})
+    };
     return (
         <StyledBox>
         <StyledFlexRow>
@@ -18,12 +25,12 @@ const ModalView = ({ title, data, loading, error, triggerClose }) => {
         </StyledFlexRow>
         <StyledContentWrapper>
             <StyledHeader>
-                <SortingButton text={capitalizeFirstLetter(name)} />
-                <SortingButton text={capitalizeFirstLetter(status)}/>
+                <SortingButton type={keyResolver().name} handleSorting={handleSorting} text={capitalizeFirstLetter(name)} sorting={sorting} />
+                <SortingButton type={keyResolver().status} handleSorting={handleSorting} text={capitalizeFirstLetter(status)} sorting={sorting} />
             </StyledHeader>
             <StyledTableWrapper>
                 <StyledSimpleBar>
-                {loading ? <Loader/> : <ModalTable data={data} title={title}/>}
+                {loading ? <Loader/> : <ModalTable sorting={sorting} data={data} title={title}/>}
                 </StyledSimpleBar>
             </StyledTableWrapper>
             <StyledTableOverlay />

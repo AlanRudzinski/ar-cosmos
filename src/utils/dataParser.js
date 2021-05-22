@@ -21,7 +21,10 @@ export const keyResolver = title => {
                 status: 'active'
             }
         default:
-            break;
+            return{
+                name: 'name',
+                status: 'status'
+            }
     }
 }
 
