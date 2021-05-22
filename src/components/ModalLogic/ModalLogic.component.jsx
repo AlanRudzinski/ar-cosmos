@@ -12,9 +12,10 @@ const ModalLogic = ({ open, category, triggerClose }) => {
         const { data : apiData }  = await apiCall(
             `https://api.spacexdata.com/v4/${category}`
         );
+        
         setData(apiData);
     }
-
+ 
     useEffect(() => {
         if(category) getData();
         // eslint-disable-next-line react-hooks/exhaustive-deps

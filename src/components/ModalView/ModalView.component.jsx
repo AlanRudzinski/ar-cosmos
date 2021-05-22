@@ -5,7 +5,7 @@ import SortingButton from '../SortingButton/SortingButton.component';
 import Loader from '../Loader/Loader.component';
 import ModalTable from '../ModalTable/ModalTable.component';
 import { keyResolver } from '../../utils/dataParser'
-import { capitalizeFirstLetter } from '../../utils/capitalizeFirstLetter';
+import { cleanTitle } from '../../utils/cleanTitle';
 
 
 const ModalView = ({ title, data, loading, error, triggerClose }) => {
@@ -20,13 +20,13 @@ const ModalView = ({ title, data, loading, error, triggerClose }) => {
     return (
         <StyledBox>
         <StyledFlexRow>
-            <StyledTitle>{capitalizeFirstLetter(title)}</StyledTitle>
+            <StyledTitle>{cleanTitle(title)}</StyledTitle>
             <StyledCross onClick={triggerClose} />
         </StyledFlexRow>
         <StyledContentWrapper>
             <StyledHeader>
-                <SortingButton type={keyResolver().name} handleSorting={handleSorting} text={capitalizeFirstLetter(name)} sorting={sorting} />
-                <SortingButton type={keyResolver().status} handleSorting={handleSorting} text={capitalizeFirstLetter(status)} sorting={sorting} />
+                <SortingButton type={keyResolver().name} handleSorting={handleSorting} text={cleanTitle(name)} sorting={sorting} />
+                <SortingButton type={keyResolver().status} handleSorting={handleSorting} text={cleanTitle(status)} sorting={sorting} />
             </StyledHeader>
             <StyledTableWrapper>
                 <StyledSimpleBar>

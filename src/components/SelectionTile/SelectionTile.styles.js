@@ -31,17 +31,18 @@ export const StyledTileImage = styled.div`
     background-size: cover;
     background-image: linear-gradient(360deg, #2B224A 0%, rgba(43, 34, 74, 0) 100%), url(${props => props.imgUrl});
     transition: all .5s ease-in-out;
-    ${props => props.isHovered ? 'filter: blur(2px)' : ''}
+    ${props => props.isHovered ? `filter: blur(${props.theme.other.blur}px)` : ''}
+
 `
 
 export const StyledOverlay = styled.div`
-    width: 102%;
-    height: 102%;
+    width: calc(100% + ${props => props.theme.other.blur*2}px);
+    height: calc(100% + ${props => props.theme.other.blur*2}px);
     position: absolute;
     border-radius: 16px;
     background: linear-gradient(0deg, rgba(43, 34, 74, 0.92) 7.69%, rgba(70, 58, 113, 0.92) 100%);
-    top: -1%;
-    left: -1%;
+    top: -${props => props.theme.other.blur}px;
+    left: -${props => props.theme.other.blur}px;
     transition: all .3s ease-in-out;
     opacity: ${props => props.isHovered ? '1' : '0'};
 `

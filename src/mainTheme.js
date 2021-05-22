@@ -17,6 +17,9 @@ export const theme = {
   fonts: ["'Inter', sans-serif"],
   fontSizes: {
     medium: "14px",
+  },
+  other: {
+    blur: 2,
   }
 };
 

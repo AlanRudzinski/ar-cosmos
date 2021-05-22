@@ -24,7 +24,7 @@ const useApiCall = () => {
         try {
             setError(null);
             setLoading(true);
-            await sleep();
+            // await sleep();
             return await axios(url, {cancelToken: source.token})
         } catch (err) {
             setError(errorMsg);
