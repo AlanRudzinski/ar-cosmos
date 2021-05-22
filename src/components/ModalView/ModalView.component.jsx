@@ -17,6 +17,7 @@ const ModalView = ({ title, data, loading, error, triggerClose }) => {
             collection: sorting.direction === -1 ? null : type, 
             direction: sorting.direction === null ? 1 : sorting.direction === 1 ? -1 : null})
     };
+
     return (
         <StyledBox>
         <StyledFlexRow>
@@ -30,6 +31,7 @@ const ModalView = ({ title, data, loading, error, triggerClose }) => {
             </StyledHeader>
             <StyledTableWrapper>
                 <StyledSimpleBar>
+                {error ? <p>{error}</p> : ''}
                 {loading ? <Loader/> : <ModalTable sorting={sorting} data={data} title={title}/>}
                 </StyledSimpleBar>
             </StyledTableWrapper>

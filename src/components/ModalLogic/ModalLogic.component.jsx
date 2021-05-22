@@ -4,6 +4,7 @@ import ModalView from '../ModalView/ModalView.component';
 
 import useApiCall from '../../hooks/useApiCall';
 
+
 const ModalLogic = ({ open, category, triggerClose }) => {
     const { apiCall, loading, error } = useApiCall(); 
     const [data, setData] = useState(null);
@@ -23,6 +24,7 @@ const ModalLogic = ({ open, category, triggerClose }) => {
 
 
     if(!open) return null;
+
 
     return (
         <ModalView title={category} data={data} error={error} loading={loading} triggerClose={triggerClose}/>

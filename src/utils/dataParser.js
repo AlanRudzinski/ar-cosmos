@@ -37,7 +37,6 @@ const dataPraser = (data, title) => {
     if(!data) return {}
     let dataToReturn = data;
     if(title === 'starlink') {
-        console.log(1)
         dataToReturn = data.map(el => el?.spaceTrack)
     }
     const { name, status, id } = keyResolver(title);

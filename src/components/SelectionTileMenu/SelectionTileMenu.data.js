@@ -1,4 +1,4 @@
-import capsuleImage from '../../assets/capsule-big.png'
+import capsuleImage from '../../assets/capsule.png'
 import crewImage from '../../assets/crew.png'
 import rocketsImage from '../../assets/rockets.png'
 import starlinkImage from '../../assets/starlink.png'

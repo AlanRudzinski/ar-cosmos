@@ -10,14 +10,13 @@ import { useRocketContext } from '../../context/rocketContext';
 
 
 const RocketLauncher = () => {
-    const { animate } = useRocketContext();
+    const { animate, toggleAnimation } = useRocketContext();
     const [animating, setAnimating] = useState(false);
     const rocketTimeline = generateRocketTimeline('.rocket');
     const smokeLeftTimeline = generateSmokeAnimation('.left-smoke', false, 3);
     const smokeRightTimeline = generateSmokeAnimation('.right-smoke', true, 3);
     const smokeLeftTimelineSingle = generateSmokeAnimation('.left-smoke', false, 1);
     const smokeRightTimelineSingle = generateSmokeAnimation('.right-smoke', true, 1);
-
     useEffect(() => {
         if(animate && !animating){
             setAnimating(true)
@@ -28,6 +27,7 @@ const RocketLauncher = () => {
                 smokeLeftTimelineSingle.play()
                 smokeRightTimelineSingle.play()
                 setAnimating(false)
+                toggleAnimation()
             }, 9500)
             // eslint-disable-next-line react-hooks/exhaustive-deps
         }}, [animate])
