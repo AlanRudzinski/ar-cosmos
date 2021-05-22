@@ -1,21 +1,19 @@
 {
   "files": {
-    "main.css": "/ar-cosmos/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/ar-cosmos/static/js/main.e3b200c5.chunk.js",
-    "main.js.map": "/ar-cosmos/static/js/main.e3b200c5.chunk.js.map",
+    "main.js": "/ar-cosmos/static/js/main.3d0042b0.chunk.js",
+    "main.js.map": "/ar-cosmos/static/js/main.3d0042b0.chunk.js.map",
     "runtime-main.js": "/ar-cosmos/static/js/runtime-main.b9b472a4.js",
     "runtime-main.js.map": "/ar-cosmos/static/js/runtime-main.b9b472a4.js.map",
     "static/css/2.a2825889.chunk.css": "/ar-cosmos/static/css/2.a2825889.chunk.css",
-    "static/js/2.dee2ba77.chunk.js": "/ar-cosmos/static/js/2.dee2ba77.chunk.js",
-    "static/js/2.dee2ba77.chunk.js.map": "/ar-cosmos/static/js/2.dee2ba77.chunk.js.map",
+    "static/js/2.f733daa4.chunk.js": "/ar-cosmos/static/js/2.f733daa4.chunk.js",
+    "static/js/2.f733daa4.chunk.js.map": "/ar-cosmos/static/js/2.f733daa4.chunk.js.map",
     "index.html": "/ar-cosmos/index.html",
     "static/css/2.a2825889.chunk.css.map": "/ar-cosmos/static/css/2.a2825889.chunk.css.map",
-    "static/css/main.6dea0f05.chunk.css.map": "/ar-cosmos/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.dee2ba77.chunk.js.LICENSE.txt": "/ar-cosmos/static/js/2.dee2ba77.chunk.js.LICENSE.txt",
+    "static/js/2.f733daa4.chunk.js.LICENSE.txt": "/ar-cosmos/static/js/2.f733daa4.chunk.js.LICENSE.txt",
     "static/media/arrow_down.6b6cc46f.svg": "/ar-cosmos/static/media/arrow_down.6b6cc46f.svg",
     "static/media/arrow_up.de82c2b9.svg": "/ar-cosmos/static/media/arrow_up.de82c2b9.svg",
     "static/media/bothArrows.2c19fce6.svg": "/ar-cosmos/static/media/bothArrows.2c19fce6.svg",
-    "static/media/capsule-big.c3ed6e78.png": "/ar-cosmos/static/media/capsule-big.c3ed6e78.png",
+    "static/media/capsule.81826c3f.png": "/ar-cosmos/static/media/capsule.81826c3f.png",
     "static/media/crew.a06c45b2.png": "/ar-cosmos/static/media/crew.a06c45b2.png",
     "static/media/cross.1e4b9463.svg": "/ar-cosmos/static/media/cross.1e4b9463.svg",
     "static/media/landing_gear.661ada1a.svg": "/ar-cosmos/static/media/landing_gear.661ada1a.svg",
@@ -31,8 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.b9b472a4.js",
     "static/css/2.a2825889.chunk.css",
-    "static/js/2.dee2ba77.chunk.js",
-    "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.e3b200c5.chunk.js"
+    "static/js/2.f733daa4.chunk.js",
+    "static/js/main.3d0042b0.chunk.js"
   ]
 }
