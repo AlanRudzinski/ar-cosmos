@@ -17,8 +17,3 @@ Builds the app for production to the `build` folder.\
 ### `yarn deploy`
 
 Updates the app on gh-pages.\
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
